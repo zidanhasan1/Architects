@@ -7,7 +7,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
     margin: 0;
-    width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +50,7 @@ nav a{
     text-align: center;
     margin-bottom: 30px;
 }
-.text-title{
+.text-box-title{
     display: block;
     align-items: center;
     width: 500px;
@@ -221,10 +220,11 @@ nav a{
 .sponser-icon{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .sponser-icon img{
     width: 70.67px;
-    height: 20px;
+    height: 30px;
 }
 
 footer{
@@ -234,4 +234,43 @@ footer{
     border-radius: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+/* media-quary */
+
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+        
+    }
+.article-2,nav,.menu ul{
+    display:block}
+    
+    .img img{
+        width: 100%;
+    }
+    nav{
+        text-align: center;
+    }
+    .article-1{
+        flex-direction: column-reverse;
+    }
+    .article-text{
+        text-align: center;
+    }
+    .article-1 img{
+    width:100%;
+    }
+    .article-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{
+        text-align: center;
+    }
+    .icon-img,.sponser-icon{
+        display: block;
+    }
+    .icon-text,.sponser-icon{
+    text-align: center;}
+    
 }
